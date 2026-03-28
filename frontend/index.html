@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoteGuard Prototype</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Cybersecurity Concept Demo</p>
+          <h1>VoteGuard Prototype</h1>
+          <p class="hero-copy">
+            A polished local demo that simulates login, ballot submission, vote counting, and audit visibility for showcase and research discussions.
+          </p>
+        </div>
+        <div class="hero-badge">
+          <span>Research Only</span>
+          <strong>Not a Real Voting System</strong>
+        </div>
+      </section>
+
+      <section class="layout">
+        <section class="main-column">
+          <section class="card">
+            <h2>Mock Login</h2>
+            <p class="section-copy">Enter any username to begin a local demo session.</p>
+
+            <form id="login-form">
+              <label for="username">Username</label>
+              <input id="username" name="username" type="text" placeholder="Enter a showcase username" maxlength="20" required />
+              <p class="input-note">Use up to 20 letters, numbers, spaces, hyphens, or underscores.</p>
+              <button type="submit">Start Session</button>
+            </form>
+          </section>
+
+          <section class="card identity-card hidden" id="identity-card">
+            <div class="identity-label">Active Session</div>
+            <div id="welcome-message" class="identity-value"></div>
+            <div id="session-state" class="identity-meta"></div>
+            <div id="session-id-display" class="identity-meta"></div>
+          </section>
+
+          <section id="voting-section" class="card hidden">
+            <div class="section-header">
+              <h2>Mock Voting Screen</h2>
+              <span class="pill" id="vote-status-pill">Voting Open</span>
+            </div>
+            <p class="section-copy">Choose one fake candidate below. A session can submit only one demo vote.</p>
+
+            <div class="candidate-grid">
+              <button class="candidate-button" data-candidate="Alex Carter" type="button">Vote for Alex Carter</button>
+              <button class="candidate-button" data-candidate="Jordan Lee" type="button">Vote for Jordan Lee</button>
+              <button class="candidate-button" data-candidate="Taylor Morgan" type="button">Vote for Taylor Morgan</button>
+            </div>
+
+            <div id="vote-confirmation" class="vote-confirmation hidden"></div>
+          </section>
+
+          <section class="card">
+            <h2>Security Notes</h2>
+            <ul class="notes-list">
+              <li>Duplicate voting is prevented per browser session.</li>
+              <li>Demo sessions automatically expire after a short timeout.</li>
+              <li>Key actions are tracked in a simple in-memory audit log.</li>
+              <li>This is a simulated cybersecurity prototype, not a real voting system.</li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="side-column">
+          <section class="card">
+            <h2>Live Results</h2>
+            <p class="section-copy">Votes are stored only in server memory for the lifetime of the local process.</p>
+            <ul id="results-list" class="results-list"></ul>
+          </section>
+
+          <section class="card">
+            <h2>Audit Log</h2>
+            <p class="section-copy">Recent mock events help illustrate transparency and session controls in the demo.</p>
+            <ul id="audit-log-list" class="audit-log-list"></ul>
+          </section>
+
+          <section class="card status-card">
+            <h2>Session Status</h2>
+            <p id="status-message" class="status"></p>
+            <button id="reset-demo-button" class="secondary-button" type="button">Reset Demo</button>
+          </section>
+        </section>
+      </section>
+
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
