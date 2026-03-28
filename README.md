@@ -56,3 +56,16 @@ This app is designed to be easy to demo locally at `http://localhost:3000` while
 - Restarting the server clears all results.
 - Duplicate voting is prevented only at the demo session level.
 - This implementation is intentionally simple and insecure because it is a cybersecurity demo, not a production system.
+## Screenshots
+
+### Login Screen
+![Login](screenshots/Before-login.png)
+
+### Active Session
+![Session](screenshots/Session-active.png)
+
+### Session Timeout
+![Timeout](screenshots/Session-timeout.png)
+
+### Vote Submitted
+![Vote](screenshots/Vote-submitted.png)
