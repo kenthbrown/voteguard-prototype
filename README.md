@@ -59,13 +59,13 @@ This app is designed to be easy to demo locally at `http://localhost:3000` while
 ## Screenshots
 
 ### Login Screen
-![Login](screenshots/Before-login.png)
+![Login](Screenshots/Before-login.png)
 
 ### Active Session
-![Session](screenshots/Session-active.png)
+![Session](Screenshots/Session-active.png)
 
 ### Session Timeout
-![Timeout](screenshots/Session-timeout.png)
+![Timeout](Screenshots/Session-timeout.png)
 
 ### Vote Submitted
-![Vote](screenshots/Vote-submitted.png)
+![Vote](Screenshots/Vote-submitted.png)
