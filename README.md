@@ -1,5 +1,8 @@
 # VoteGuard Prototype
 
+## Live Demo
+👉 [Click here to try the app](https://voteguard-prototype.onrender.com)
+
 VoteGuard Prototype is a small local web app that demonstrates a mock voting workflow for a cybersecurity project showcase. It lets a user log in with a username, cast one demo vote, view live in-memory results, and observe a simple audit trail of important actions.
 
 ## Important Notice
